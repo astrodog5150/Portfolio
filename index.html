@@ -1,10 +1,10 @@
-<!-- TODO -->
-<!-- presented with developer's name, recent photo/avatar,
+ <!-- TODO -->
+<!-- DONE presented with developer's name, recent photo/avatar,
     and links to sections about them, their work, and how to contact them -->
 <!-- Clicking on links in navigation scrolls to corresponding section -->
 <!-- create section with titled images of my applications -->
 <!-- First application is bigger than rest -->
-<!-- clicking on images of applications takes you to deployed page of app -->
+<!-- DONE clicking on images of applications takes you to deployed page of app -->
 <!-- compatible with different screen sizes -->
 
 <!DOCTYPE html>
@@ -23,10 +23,15 @@
         </h1>
         <div>
             <ul>
-                <li>About me</li>
-                <li>Work</li>
-                <li>Contact me</li>
-                <li>Resume</li> 
+                <li>
+                    <a href="#about">About me</a>
+                </li>
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                <li>
+                    <a href="#contactme">Contact me</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -35,13 +40,62 @@
             Here's what I got
         </h2>
     </nav>
-    <nav>
+    <nav class="about">
         <section>
-            <h1 class="aboutme">About Me</h1>
+            <h1 class="aboutme"><b>About Me</b></h1>
         </section>
+        <img src="./assets/images/jeremypicclose.jpg" class="float-right" alt="A picture of Jeremy Jarvis sitting on a couch" />
         <aside>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio pariatur libero explicabo omnis, esse ipsam provident earum corporis nam, vel commodi saepe consectetur laudantium est temporibus quas ex quia sit.</p>
+            <p class="aboutmewords">Howdy! My name is Jeremy and I'm a 23 year old student looking to get into a career of programming. <br>I'm just starting out in my coding journey, but here's what I have so far! </p>
+            
         </aside>
     </nav>
+    <h1 class="workheader">
+           <b>Work</b>
+    </h1><section class="RPSLS">
+            <h2>
+                <a href="https://replit.com/@JeremyJarvis/Rock-Paper-Scissors-Lizard-Spock" target=_blank title="This takes you to a replit page containing the RPSLS code.">
+                    Rock Paper Scissors Lizard Spock
+                </a>
+            </h2>
+            <p>One of my first bigger projects</p>
+            <p>Made in Python</p>
+        </section>
+    <main class="work"> 
+<!-- Projects: RPSLS, Blackjack, Caesar Cipher, Hangman -->
+        
+        <section class="Blackjack">
+            <h2>
+                <a href="https://replit.com/@JeremyJarvis/BlackJackGamefinal" target=_blank title="This takes you to a replit page containing the Blackjack code.">
+                    Blackjack
+                </a>
+            </h2>
+            <p>A fun game that dabbles in coding RNG</p>
+            <p>Made in Python</p>
+        </section>
+        <section class="caesarCipher">
+            <h2>
+                <a href="https://replit.com/@JeremyJarvis/Caesar-Cipher-final" target=_blank title="This takes you to a replit page containing the Caesar Cipher code.">
+                    Caesar Cipher
+                </a>
+            </h2>
+            <p>A neat combination of old school processes with new technology</p>
+            <p>Made in Python</p>
+        </section>
+        <section class="Hangman">
+            <h2>
+                <a href="https://replit.com/@JeremyJarvis/Hangman-Final" target=_blank title="This takes you to a replit page containing the Hangman code.">
+                    Hangman
+                </a>
+            </h2>
+            <p>The classic passtime</p>
+            <p>Made in Python</p>
+        </section>
+    </main>
+    <footer class="contactme">
+        <h2>Contact Me</h2>
+        <p>Email: notjeremy5150@gmail.com</p>
+        <p>Send an email my way if you have any questions or ideas!</p>
+    </footer>
 </body>
 </html>
