@@ -29,6 +29,7 @@ body {
     display: flex;
     font-size: 45px;
 }
+
 .header div {
     float: right;
 }
@@ -36,7 +37,11 @@ body {
 .header div ul {
     text-align: right;
     list-style-type: none;
-    
+}
+
+#resources {
+    float: right;
+    justify-content: right;
 }
 
 .header div ul li {
@@ -68,8 +73,9 @@ body {
     object-fit: contain;
     flex-wrap: wrap;
     background-color: grey;
-    height: 300px;
+    max-height: 350px;
     width: 100%;
+    overflow: scroll;
 }
 
 .about img {
@@ -79,9 +85,14 @@ body {
 }
 
 .aboutmewords {
+    /* margin: auto;
+    padding-right: 20px; */
+    padding-bottom: 10px;
     color: white;
     text-align: right;
     font-size: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .workheader{
@@ -128,7 +139,7 @@ main {
     border-color: black;
     border-style: groove;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .caesarCipher {
@@ -166,6 +177,8 @@ footer {
 
 @media screen and (max-width: 826) {
     .aboutmewords {
-        display: wrap;
+        padding: 2px;
+        margin: 2px;
+        text-wrap: wrap;
     }
 }

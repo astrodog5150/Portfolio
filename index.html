@@ -1,11 +1,11 @@
  <!-- TODO -->
 <!-- DONE presented with developer's name, recent photo/avatar,
     and links to sections about them, their work, and how to contact them -->
-<!-- Clicking on links in navigation scrolls to corresponding section -->
-<!-- create section with titled images of my applications -->
+<!-- DONE Clicking on links in navigation scrolls to corresponding section -->
+<!-- DONEcreate section with titled images of my applications -->
 <!-- DONE First application is bigger than rest -->
 <!-- DONE clicking on images of applications takes you to deployed page of app -->
-<!-- compatible with different screen sizes -->
+<!-- DONE compatible with different screen sizes -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +22,8 @@
             Jeremy's Portfolio
         </h1>
         <div>
-            <ul>
-                <li>
+            <ul id="resources">
+                <li >
                     <a href="#about">About me</a>
                 </li>
                 <li>
@@ -40,18 +40,19 @@
             Here's what I got
         </h2>
     </nav>
-    <nav class="about">
+    <nav class="about" id="about">
         <section>
             <h1 class="aboutme"><b>About Me</b></h1>
         </section>
         <img src="./assets/images/jeremypicclose.jpg" class="float-right" alt="A picture of Jeremy Jarvis sitting on a couch" />
         <aside>
-            <p class="aboutmewords">Howdy! My name is Jeremy and I'm a 23 year old student looking to get into a career of programming. <br>I'm just starting out in my coding journey, but here's what I have so far! </p>
+            <p class="aboutmewords">Howdy! My name is Jeremy and I'm a 23 year old student looking to get into a career of programming.</p>
+            <p class="aboutmewords">I'm just starting out in my coding journey, but here's what I have so far!</p>
             
         </aside>
     </nav>
     
-    <main class="work"> 
+    <main class="work" id="work"> 
 <!-- Projects: RPSLS, Blackjack, Caesar Cipher, Hangman -->
         <h1 class="workheader">
            <b>Work</b>
@@ -93,7 +94,7 @@
             <p><b>Made in Python</b></p>
         </section>
     </main>
-    <footer class="contactme">
+    <footer class="contactme" id="contactme">
         <h2>Contact Me</h2>
         <p>Email: notjeremy5150@gmail.com</p>
         <p>Send an email my way if you have any questions or ideas!</p>
