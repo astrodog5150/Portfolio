@@ -80,7 +80,7 @@ body {
 
 .aboutmewords {
     color: white;
-    text-align:right;
+    text-align: right;
     font-size: 20px;
 }
 
@@ -94,7 +94,13 @@ body {
     max-width: 200px;
 }
 
+.work {
+    justify-content: center;
+    align-content: center;
+}
+
 main {
+    background-color: darkgrey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,36 +111,46 @@ main {
 
 .RPSLS {
     background-image: url(./images/RockPaperScissorsLizardSpock.jpg);
-    object-fit: cover;
+    background-size: contain;
     border: 50px;
     padding: .75em;
     border-color: black;
     border-style:groove;
     text-align: center;
+    color: black;
 }
 
 .Blackjack {
+    background-image: url(./images/Blackjack21.jpg);
+    background-size: contain;
     border: 10px;
     padding: .75em;
     border-color: black;
     border-style: groove;
     text-align: center;
+    color: black;
 }
 
 .caesarCipher {
+    background-image: url(./images/caesarcipher.jpg);
+    background-size: contain;
     border: 10px;
     padding: .75em;
     border-color: black;
     border-style: groove;
     text-align: center; 
+    color: black;
 }
 
 .Hangman {
+    background-image: url(./images/hangman.jpg);
+    background-size: contain;
     border: 10px;
     padding: .75em;
     border-color: black;
     border-style: groove;
     text-align: center;
+    color: white;
 }
 
 footer {
@@ -146,4 +162,10 @@ footer {
         rgba(255, 255, 255) 0%, 
         rgb(43, 41, 41) 80%
     );
+}
+
+@media screen and (max-width: 826) {
+    .aboutmewords {
+        display: wrap;
+    }
 }
